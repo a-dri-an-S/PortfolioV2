@@ -3,30 +3,34 @@ import Main from '../../Pages/Main/Main';
 import AboutMe from '../../Pages/About Me/AboutMe';
 import Portfolio from '../../Pages/Portfolio/Portfolio';
 import Contact from '../../Pages/Contact/Contact';
+import './SideBar.css';
+import Logo from '../../assets/AdrianLogo.png';
 
 
 const SideBar = () => {
     return (
-        <aside className="side-bar">
-            <div className="side-bar-logo">
-                <img className="side-bar-logo-img" src={{}} alt={`AdrianSalinas`} />
+        <aside className="router">
+            <div className="side-bar">
+                <div className="side-bar-logo">
+                    <img className="side-bar-logo-img" src={Logo} alt={`AdrianSalinas`} />
+                </div>
+                <nav className="side-bar-links">
+                    <ul className="side-bar-link-list">
+                        <li className="side-bar-link">
+                            <Link className="side-bar-link link" to="/">Home</Link>
+                        </li>
+                        <li className="side-bar-link">
+                            <Link className="side-bar-link link" to="/about-me">About Me</Link>
+                        </li>
+                        <li className="side-bar-link">
+                            <Link className="side-bar-link link" to="/portfolio">Portfolio</Link>
+                        </li>
+                        <li className="side-bar-link">
+                            <Link className="side-bar-link link" to="/contact">Contact</Link>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <nav className="side-bar-links">
-                <ul className="side-bar-link-list">
-                    <li className="side-bar-link">
-                        <Link to="/">Home</Link>
-                    </li>
-                    <li className="side-bar-link">
-                        <Link to="/about-me">About Me</Link>
-                    </li>
-                    <li className="side-bar-link">
-                        <Link to="/portfolio">Portfolio</Link>
-                    </li>
-                    <li className="side-bar-link">
-                        <Link to="/contact">Contact</Link>
-                    </li>
-                </ul>
-            </nav>
 
             <Routes>
                 <Route path="/" element={<Main />} />

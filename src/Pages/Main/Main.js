@@ -1,7 +1,7 @@
 const Main = () => {
     return (
         <section className="main">
-            <div classNAme="main-container">
+            <div className="main-container">
                 <div className="main-content">
                     <img className="main-avatar" src={{}} alt="Adrian-Salinas-Avatar"/>
                     <div className="main-intro">
