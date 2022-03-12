@@ -7,22 +7,22 @@ import Contact from '../../Pages/Contact/Contact';
 
 const SideBar = () => {
     return (
-        <aside className="sideBar">
-            <div className="sideBarLogo">
-                <img className="sideBarLogoImg" src={{}} alt={`AdrianSalinas`} />
+        <aside className="side-bar">
+            <div className="side-bar-logo">
+                <img className="side-bar-logo-img" src={{}} alt={`AdrianSalinas`} />
             </div>
-            <nav className="sideBarLinks">
-                <ul className="sideBarLinkList">
-                    <li className="sideBarLink">
+            <nav className="side-bar-links">
+                <ul className="side-bar-link-list">
+                    <li className="side-bar-link">
                         <Link to="/">Home</Link>
                     </li>
-                    <li className="sideBarLink">
+                    <li className="side-bar-link">
                         <Link to="/about-me">About Me</Link>
                     </li>
-                    <li className="sideBarLink">
+                    <li className="side-bar-link">
                         <Link to="/portfolio">Portfolio</Link>
                     </li>
-                    <li className="sideBarLink">
+                    <li className="side-bar-link">
                         <Link to="/contact">Contact</Link>
                     </li>
                 </ul>
@@ -33,7 +33,6 @@ const SideBar = () => {
                 <Route path="/about-me" element={<AboutMe />} />
                 <Route path="/portfolio" element={<Portfolio />} />
                 <Route path="/contact" element={<Contact />} />
-
             </Routes>
         </aside>
     );
