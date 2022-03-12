@@ -1,3 +1,12 @@
+html {
+  --prussian-blue: rgb(29, 53, 87);
+  --black-coral: rgb(73, 88, 103);
+  --blue-yonder: rgb(87, 115, 153);
+  --honeydew-opaque: rgba(241, 250, 238, 0.5);
+  --honeydew:rgb(241, 250, 238);
+  --orange-red: rgb(254, 95, 85);
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
