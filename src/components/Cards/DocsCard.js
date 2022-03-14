@@ -8,10 +8,12 @@ const DocsCard = () => {
                 <Button 
                     name="Resume"
                     type="button"
+                    styles="docs"
                 />
                 <Button 
                     name="Certificate"
                     type="button"
+                    styles="docs"
                 />
             </div>
         </div>
