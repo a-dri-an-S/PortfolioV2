@@ -1,6 +1,6 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Main from '../../Pages/Main/Main';
-import AboutMe from '../../Pages/About Me/AboutMe';
+import AboutMe from '../../Pages/AboutMe/AboutMe';
 import Portfolio from '../../Pages/Portfolio/Portfolio';
 import Contact from '../../Pages/Contact/Contact';
 import './SideBar.css';

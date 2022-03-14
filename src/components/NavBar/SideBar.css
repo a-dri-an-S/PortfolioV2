@@ -5,37 +5,13 @@
 .side-bar {
     width: 10%;
     height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
     position: fixed;
     background-color: var(--blue-yonder);
-    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
     animation: widenOnPageLoad 1s ease-in 0s 1 forwards;
-}
-@keyframes widenOnPageLoad {
-    0% {
-        width: 0%;
-    }
-    100% {
-        width: 10%
-    }
 }
 
 .fade-in {
     animation: fadeInOnPageLoad 1.25s ease 0s 1 forwards;
-}
-@keyframes fadeInOnPageLoad {
-    0% {
-        opacity: 0;
-    }
-    50% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1
-    }
 }
 
 .side-bar-hover {
@@ -51,17 +27,7 @@
     animation: hideOnPageLoad 1.25s linear 0s 1 forwards;
     transition: width .5s;
 }
-@keyframes hideOnPageLoad {
-    0% {
-        opacity: 0%;
-    }
-    75% {
-        opacity: 0%
-    }
-    100% {
-        opacity: 100%
-    }
-}
+
 .side-bar-hover:hover {
     width: 15%;
 }
@@ -116,4 +82,37 @@
 
 .link:active {
     color: var(--orange-red);
+}
+
+@keyframes widenOnPageLoad {
+    0% {
+        width: 0%;
+        box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
+    }
+    100% {
+        width: 10%;
+        box-shadow: none;
+    }
+}
+@keyframes fadeInOnPageLoad {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1
+    }
+}
+@keyframes hideOnPageLoad {
+    0% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 0%
+    }
+    100% {
+        opacity: 100%
+    }
 }
