@@ -12,7 +12,6 @@
     position: fixed;
     background-color: var(--blue-yonder);
     box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
-    transition: width .5s;
     animation: widenOnPageLoad 1s ease-in 0s 1 forwards;
 }
 @keyframes widenOnPageLoad {
@@ -25,13 +24,13 @@
 }
 
 .fade-in {
-    animation: fadeInOnPageLoad 1s ease 0s 1 forwards;
+    animation: fadeInOnPageLoad 1.25s ease 0s 1 forwards;
 }
 @keyframes fadeInOnPageLoad {
     0% {
         opacity: 0;
     }
-    75% {
+    50% {
         opacity: 0;
     }
     100% {
@@ -39,7 +38,31 @@
     }
 }
 
-.side-bar:hover {
+.side-bar-hover {
+    width: 10%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    position: fixed;
+    background-color: var(--blue-yonder);
+    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
+    animation: hideOnPageLoad 1.25s linear 0s 1 forwards;
+    transition: width .5s;
+}
+@keyframes hideOnPageLoad {
+    0% {
+        opacity: 0%;
+    }
+    75% {
+        opacity: 0%
+    }
+    100% {
+        opacity: 100%
+    }
+}
+.side-bar-hover:hover {
     width: 15%;
 }
 
@@ -87,7 +110,8 @@
 }
 
 .link:hover {
-    font-weight: 700;
+    color: var(--honeydew-opaque);
+    font-weight: 600;
 }
 
 .link:active {

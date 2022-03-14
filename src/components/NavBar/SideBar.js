@@ -11,25 +11,27 @@ const SideBar = () => {
     return (
         <aside className="router">
             <div className="side-bar">
-                <div className="side-bar-logo fade-in">
-                    <img className="side-bar-logo-img" src={Logo} alt={`AdrianSalinas`} />
+                <div className="side-bar-hover">
+                    <div className="side-bar-logo fade-in">
+                        <img className="side-bar-logo-img" src={Logo} alt={`AdrianSalinas`} />
+                    </div>
+                    <nav className="side-bar-links fade-in">
+                        <ul className="side-bar-link-list">
+                            <li className="side-bar-link">
+                                <Link className="side-bar-link link" to="/">Home</Link>
+                            </li>
+                            <li className="side-bar-link">
+                                <Link className="side-bar-link link" to="/about-me">About Me</Link>
+                            </li>
+                            <li className="side-bar-link">
+                                <Link className="side-bar-link link" to="/portfolio">Portfolio</Link>
+                            </li>
+                            <li className="side-bar-link">
+                                <Link className="side-bar-link link" to="/contact">Contact</Link>
+                            </li>
+                        </ul>
+                    </nav>
                 </div>
-                <nav className="side-bar-links fade-in">
-                    <ul className="side-bar-link-list">
-                        <li className="side-bar-link">
-                            <Link className="side-bar-link link" to="/">Home</Link>
-                        </li>
-                        <li className="side-bar-link">
-                            <Link className="side-bar-link link" to="/about-me">About Me</Link>
-                        </li>
-                        <li className="side-bar-link">
-                            <Link className="side-bar-link link" to="/portfolio">Portfolio</Link>
-                        </li>
-                        <li className="side-bar-link">
-                            <Link className="side-bar-link link" to="/contact">Contact</Link>
-                        </li>
-                    </ul>
-                </nav>
             </div>
 
             <Routes>
