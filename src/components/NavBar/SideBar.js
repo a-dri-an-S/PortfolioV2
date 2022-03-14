@@ -11,10 +11,10 @@ const SideBar = () => {
     return (
         <aside className="router">
             <div className="side-bar">
-                <div className="side-bar-logo">
+                <div className="side-bar-logo fade-in">
                     <img className="side-bar-logo-img" src={Logo} alt={`AdrianSalinas`} />
                 </div>
-                <nav className="side-bar-links">
+                <nav className="side-bar-links fade-in">
                     <ul className="side-bar-link-list">
                         <li className="side-bar-link">
                             <Link className="side-bar-link link" to="/">Home</Link>

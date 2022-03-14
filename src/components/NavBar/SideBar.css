@@ -13,6 +13,30 @@
     background-color: var(--blue-yonder);
     box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
     transition: width .5s;
+    animation: widenOnPageLoad 1s ease-in 0s 1 forwards;
+}
+@keyframes widenOnPageLoad {
+    0% {
+        width: 0%;
+    }
+    100% {
+        width: 10%
+    }
+}
+
+.fade-in {
+    animation: fadeInOnPageLoad 1s ease 0s 1 forwards;
+}
+@keyframes fadeInOnPageLoad {
+    0% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1
+    }
 }
 
 .side-bar:hover {
