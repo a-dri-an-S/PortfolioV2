@@ -11,7 +11,7 @@ import Git from '../../assets/Git.png';
 import VSCode from '../../assets/VSCode.png';
 import Illustrator from '../../assets/Illustrator.png';
 
-import './SkillsCard.css';
+import './Cards.css';
 
 
 const SkillsCard = () => {
