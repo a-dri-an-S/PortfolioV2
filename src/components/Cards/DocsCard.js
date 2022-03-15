@@ -10,13 +10,13 @@ const DocsCard = () => {
     const saveResume = () => {
         saveAs(
             Resume,
-            'Adrian-Salinas-Resume'.pdf
+            'Resume.pdf'
         );
     }
     const saveCertificate = () => {
         saveAs(
             Certificate,
-            'Adrian-Salinas-Certificate'.pdf
+            'Certificate.pdf'
         );
     }
 

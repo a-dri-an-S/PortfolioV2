@@ -1,4 +1,6 @@
 import { useState } from 'react';
+import { send } from 'emailjs-com';
+
 import Input from './Input';
 import TextArea from './TextArea';
 import Button from '../Button/Button';
@@ -16,47 +18,50 @@ const Form = () => {
 
     const [form, setForm] = useState(contactForm);
 
-    const handleNameChange = (e) => {
-        setForm(form => ({
-            ...form, 
-            name: e.target.value
-        }))
+    const serviceId = process.env.REACT_APP_SERVICE_ID;
+    const userId = process.env.REACT_APP_USER_ID;
+    const templateId = process.env.REACT_APP_TEMPLATE_ID;
+
+    const handleChange = e => {
+        setForm({ ...form, [e.target.name]: e.target.value })
     }
-    const handleEmailChange = (e) => {
-        setForm(form => ({
-            ...form, 
-            email: e.target.value
-        }))
-    }
-    const handleSubjectChange = (e) => {
-        setForm(form => ({
-            ...form, 
-            subject: e.target.value
-        }))
-    }
-    const handleMessageChange = (e) => {
-        setForm(form => ({
-            ...form, 
-            message: e.target.value
-        }))
+
+    const onSubmit = e => {
+        e.preventDefault();
+        send(
+            serviceId,
+            templateId,
+            form,
+            userId
+        )
+        .then(res => {
+            setForm(contactForm);
+            console.log('Success!', res.status, res.text)
+        })
+        .catch(err => {
+            console.log('Failed', err);
+        })
     }
 
     return (
-        <form className="form">
+        <form 
+            className="form"
+            onSubmit={e => onSubmit(e)}    
+        >
             <div className="form-inputs">
                 <Input
                     name="name"
                     label="Name"
                     type="text"
                     value={form.name}
-                    handleChange={handleNameChange}
+                    handleChange={handleChange}
                 />
                 <Input
                     name="email"
                     label="Email Address"
                     type="email"
                     value={form.email}
-                    handleChange={handleEmailChange}
+                    handleChange={handleChange}
                 />
             </div>
             <Input
@@ -64,14 +69,14 @@ const Form = () => {
                 label="Subject"
                 type="text"
                 value={form.subject}
-                handleChange={handleSubjectChange}
+                handleChange={handleChange}
             />
             <TextArea
                 name="message"
                 label="Message"
                 type="text"
                 value={form.message}
-                handleChange={handleMessageChange}
+                handleChange={handleChange}
             />
             <div className="form-button">
                 <Button
