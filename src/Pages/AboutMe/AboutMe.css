@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: space-around;
     align-items: center;
-    animation: fadeIn 3s ease 0s 1 forwards;
+    animation: fadeIn 1s ease 0s 1 forwards;
 }
 
 .about-me-card-title {

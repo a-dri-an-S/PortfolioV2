@@ -1,5 +1,5 @@
-import Github from '../../assets/Github.png';
-import Linkedin from '../../assets/Linkedin.png'
+import Github from '../../assets/images/Github.png';
+import Linkedin from '../../assets/images/Linkedin.png'
 
 import './SocialIcons.css';
 

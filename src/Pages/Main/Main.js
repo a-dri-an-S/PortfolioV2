@@ -1,4 +1,4 @@
-import Avatar from '../../assets/AdrianSalinas.png'
+import Avatar from '../../assets/images/AdrianSalinas.png'
 import './Main.css'
 
 const Main = () => {

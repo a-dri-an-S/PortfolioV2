@@ -4,7 +4,7 @@ import AboutMe from '../../Pages/AboutMe/AboutMe';
 import Portfolio from '../../Pages/Portfolio/Portfolio';
 import Contact from '../../Pages/Contact/Contact';
 import './SideBar.css';
-import Logo from '../../assets/AdrianLogo.png';
+import Logo from '../../assets/images/AdrianLogo.png';
 
 
 const SideBar = () => {

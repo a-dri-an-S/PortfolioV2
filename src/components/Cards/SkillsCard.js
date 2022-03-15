@@ -1,15 +1,15 @@
-import HTML from '../../assets/HTML.png';
-import CSS from '../../assets/CSS.png';
-import JS from '../../assets/Javascript.png'
-import Node from '../../assets/Node.png';
-import ReactImg from '../../assets/React.png';
-import MongoDB from '../../assets/MongoDB.png';
-import API from '../../assets/API.png';
-import GraphQL from '../../assets/GraphQL.png';
-import Windows from '../../assets/Windows.png';
-import Git from '../../assets/Git.png';
-import VSCode from '../../assets/VSCode.png';
-import Illustrator from '../../assets/Illustrator.png';
+import HTML from '../../assets/images/HTML.png';
+import CSS from '../../assets/images/CSS.png';
+import JS from '../../assets/images/Javascript.png'
+import Node from '../../assets/images/Node.png';
+import ReactImg from '../../assets/images/React.png';
+import MongoDB from '../../assets/images/MongoDB.png';
+import API from '../../assets/images/API.png';
+import GraphQL from '../../assets/images/GraphQL.png';
+import Windows from '../../assets/images/Windows.png';
+import Git from '../../assets/images/Git.png';
+import VSCode from '../../assets/images/VSCode.png';
+import Illustrator from '../../assets/images/Illustrator.png';
 
 import './Cards.css';
 
