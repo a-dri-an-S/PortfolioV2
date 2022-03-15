@@ -3,6 +3,8 @@ import { send } from 'emailjs-com';
 
 import Input from './Input';
 import TextArea from './TextArea';
+import SuccessMessage from './Message/SuccessMessage';
+import ErrorMessage from './Message/ErrorMessage';
 import Button from '../Button/Button';
 import './Form.css';
 
@@ -17,6 +19,8 @@ const contactForm = {
 const Form = () => {
 
     const [form, setForm] = useState(contactForm);
+    const [submitSuccess, setSubmitSuccess] = useState(false);
+    const [submitError, setSubmitError] = useState(false);
 
     const serviceId = process.env.REACT_APP_SERVICE_ID;
     const userId = process.env.REACT_APP_USER_ID;
@@ -35,10 +39,12 @@ const Form = () => {
             userId
         )
         .then(res => {
+            setSubmitSuccess(true);
             setForm(contactForm);
             console.log('Success!', res.status, res.text)
         })
         .catch(err => {
+            setSubmitError(true)
             console.log('Failed', err);
         })
     }
@@ -78,6 +84,14 @@ const Form = () => {
                 value={form.message}
                 handleChange={handleChange}
             />
+            <div className="form-submit-message">
+                {
+                    submitSuccess && <SuccessMessage />
+                }
+                {
+                    submitError && <ErrorMessage />
+                }
+            </div>
             <div className="form-button">
                 <Button
                     name="Submit"
