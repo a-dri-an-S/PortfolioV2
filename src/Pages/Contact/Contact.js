@@ -1,6 +1,7 @@
+import Form from '../../components/Form/Form';
+import Socials from '../../components/Socials/SocialIcons';
 import Footer from '../../components/Footer/Footer';
-import Github from '../../assets/Github.png';
-import Linkedin from '../../assets/Linkedin.png'
+
 import './Contact.css';
 
 const AboutMe = () => {
@@ -8,41 +9,11 @@ const AboutMe = () => {
     return (
         <section className="contact">
             <div className="contact-container">
+                <h2 className="contact-title">Contact</h2>
                 <div className="contact-form">
-
+                    <Form />
                 </div>
-                <div className="contact-social">
-                    <div className="contact-social-link">
-                        <a
-                            href="https://github.com/a-dri-an-S"
-                            target="_blank"
-                            rel="noreferrer"
-                        >
-                            <img
-                                className="contact-social-icon round-icon"
-                                src={Github}
-                                alt="Github"
-                            />
-                        </a>
-
-                    </div>
-                    <div className="contact-social-link">
-                        <a
-                            href="https://www.linkedin.com/in/meet-adrian-salinas/"
-                            className="contact-social-link"
-                            target="_blank"
-                            rel="noreferrer"
-
-                        >
-                            <img
-                                className="contact-social-icon square-icon"
-                                src={Linkedin}
-                                alt="Linkedin"
-                            />
-                        </a>
-
-                    </div>
-                </div>
+                <Socials />
             </div>
             <div className="contact-footer">
                 <Footer />
