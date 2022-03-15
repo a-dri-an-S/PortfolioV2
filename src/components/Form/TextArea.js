@@ -1,14 +1,14 @@
 const TextArea = ({ name, value, label, handleChange }) => {
     return (
-        <div className="contact-form-textarea-container">
+        <div className="form-textarea-container">
             <label
-                className="contact-form-label"
+                className="form-label"
                 htmlFor={name}
             >
                 {label}
             </label>
             <textarea
-                className="contact-form-textarea"
+                className="form-textarea"
                 id={name}
                 name={name}
                 value={value}

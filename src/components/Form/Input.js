@@ -1,14 +1,14 @@
 const Input = ({ type, name, value, label, handleChange }) => {
     return (
-        <div className="contact-form-input-container">
+        <div className="form-input-container">
             <label 
-                className="contact-form-label"
+                className="form-label"
                 htmlFor={name}
             >
                 {label}
             </label>
             <input
-                className="contact-form-input" 
+                className={`form-input ${name}-input`}
                 type={type}
                 id={name}
                 name={name}

@@ -1,8 +1,9 @@
 import { useState } from 'react';
-
 import Input from './Input';
 import TextArea from './TextArea';
 import Button from '../Button/Button';
+import './Form.css';
+
 
 const contactForm = {
     name: '',
@@ -41,8 +42,8 @@ const Form = () => {
     }
 
     return (
-        <form className="contact-form">
-            <div className="contact-form-inputs">
+        <form className="form">
+            <div className="form-inputs">
                 <Input
                     name="name"
                     label="Name"
@@ -72,10 +73,13 @@ const Form = () => {
                 value={form.message}
                 handleChange={handleMessageChange}
             />
-            <Button
-                name="Submit"
-                type="submit"
-            />
+            <div className="form-button">
+                <Button
+                    name="Submit"
+                    type="submit"
+                    styles="submit"
+                />
+            </div>
         </form>
     );
 }
