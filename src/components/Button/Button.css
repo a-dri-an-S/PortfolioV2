@@ -1,14 +1,3 @@
-
-button {
-    box-shadow: 0px 0px 10px 2px var(--shadow-color);
-}
-button:hover {
-    background-color: var(--blue-yonder);
-}
-button:active {
-    background-color: var(--orange-red);
-}
-
 .docs-btn {
     width: 140px;
     height: 50px;
@@ -33,4 +22,16 @@ button:active {
     border: none;
     border-radius: 14px;
     margin: 20px 0px;
+}
+
+.docs-btn, .submit-btn {
+    box-shadow: 0px 0px 10px 2px var(--shadow-color);
+}
+
+.docs-btn:hover, .submit-btn:hover {
+    background-color: var(--blue-yonder);
+}
+
+.docs-btn:active, .submit-btn:active {
+    background-color: var(--orange-red);
 }

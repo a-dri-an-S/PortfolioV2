@@ -1,15 +1,15 @@
 import { useState } from 'react';
 import SliderButton from './SliderButton';
 import SliderDots from './SliderDots';
+import Slide from './Slides/Slide';
 
-import Project1 from './Slides/Project1';
-import Project2 from './Slides/Project2';
-import Project3 from './Slides/Project3';
+import './Slider.css';
 
 const projects = [
-    <Project1 />,
-    <Project2 />,
-    <Project3 />,
+    <Slide title="Project 1" />,
+    <Slide title="Project 2" />,
+    <Slide title="Project 3" />,
+
 ];
 
 const Slider = () => {
@@ -37,9 +37,7 @@ const Slider = () => {
     return (
         <section className="slider">
             <div className="slider-container">
-                <div className="slide">
-                    {projects[slideIdx - 1]}
-                </div>
+                {projects[slideIdx - 1]}
                 <SliderButton
                     name="<"
                     type="button"

@@ -1,7 +1,7 @@
 import { Routes, Route, Link } from "react-router-dom";
 import Main from '../../Pages/Main/Main';
 import AboutMe from '../../Pages/AboutMe/AboutMe';
-import Portfolio from '../../Pages/Portfolio/Portfolio';
+import Projects from '../../Pages/Projects/Projects';
 import Contact from '../../Pages/Contact/Contact';
 import './SideBar.css';
 import Logo from '../../assets/images/AdrianLogo.png';
@@ -24,7 +24,7 @@ const SideBar = () => {
                                 <Link className="side-bar-link link" to="/about-me">About Me</Link>
                             </li>
                             <li className="side-bar-link">
-                                <Link className="side-bar-link link" to="/portfolio">Portfolio</Link>
+                                <Link className="side-bar-link link" to="/portfolio">Projects</Link>
                             </li>
                             <li className="side-bar-link">
                                 <Link className="side-bar-link link" to="/contact">Contact</Link>
@@ -37,7 +37,7 @@ const SideBar = () => {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/about-me" element={<AboutMe />} />
-                <Route path="/portfolio" element={<Portfolio />} />
+                <Route path="/portfolio" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </aside>

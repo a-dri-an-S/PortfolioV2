@@ -1,10 +1,11 @@
 import Slider from "../../components/Slider/Slider";
-import './Portfolio.css';
+import './Projects.css';  
 
 const Portfolio = () => {
     return (
-        <section className="portfolio">
-            <div className="portfolio-container">
+        <section className="projects">
+            <div className="projects-container">
+                <h2 className="projects-title">Projects</h2>
                 <Slider />
             </div>
         </section>
