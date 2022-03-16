@@ -1,16 +1,10 @@
 import { useState } from 'react';
 import SliderButton from './SliderButton';
 import SliderDots from './SliderDots';
-import Slide from './Slides/Slide';
+import { projects } from '../Projects/projects';
+
 
 import './Slider.css';
-
-const projects = [
-    <Slide title="Project 1" />,
-    <Slide title="Project 2" />,
-    <Slide title="Project 3" />,
-
-];
 
 const Slider = () => {
     const [slideIdx, setSlideIdx] = useState(1);

@@ -13,7 +13,7 @@
 
 .slide-btns {
     width: 900px;
-    height: 600px;
+    height: 100px;
     position: absolute;
     display: flex;
     justify-content: space-between;
@@ -48,7 +48,6 @@
     width: 200px;
     height: 40px;
 }
-
 .dot {
     width: 15px;
     height: 15px;
@@ -56,6 +55,8 @@
     border: none;
     border-radius: 50%;
     background-color: var(--honeydew);
+    box-shadow: 0px 0px 4px 1px var(--shadow-color);
+
 }
 .active {
     background-color: var(--prussian-blue);
