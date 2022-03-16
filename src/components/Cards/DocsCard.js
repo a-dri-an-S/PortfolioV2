@@ -7,18 +7,8 @@ import './Cards.css';
 
 const DocsCard = () => {
 
-    const saveResume = () => {
-        saveAs(
-            Resume,
-            'Resume.pdf'
-        );
-    }
-    const saveCertificate = () => {
-        saveAs(
-            Certificate,
-            'Certificate.pdf'
-        );
-    }
+    const saveResume = () => saveAs(Resume,'Resume.pdf');
+    const saveCertificate = () => saveAs(Certificate, 'Certificate.pdf');
 
     return (
         <div className="documents">
