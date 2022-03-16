@@ -38,18 +38,20 @@ const Slider = () => {
         <section className="slider">
             <div className="slider-container">
                 {projects[slideIdx - 1]}
-                <SliderButton
-                    name="<"
-                    type="button"
-                    onClick={prevSlide}
-                    direction="prev"
-                />
-                <SliderButton
-                    name=">"
-                    type="button"
-                    onClick={nextSlide}
-                    direction="next"
-                />
+                <div className="slide-btns">
+                    <SliderButton
+                        name="<"
+                        type="button"
+                        onClick={prevSlide}
+                        direction="prev"
+                    />
+                    <SliderButton
+                        name=">"
+                        type="button"
+                        onClick={nextSlide}
+                        direction="next"
+                    />
+                </div>
                 <SliderDots
                     onClick={animateDots}
                     slideIdx={slideIdx}

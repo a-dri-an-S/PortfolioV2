@@ -1,6 +1,6 @@
 .slider-container {
-    width: 700px;
-    height: 500px;
+    width: 900px;
+    height: 600px;
     margin-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -11,10 +11,18 @@
     border-radius: 18px;
 }
 
+.slide-btns {
+    width: 900px;
+    height: 600px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+}
+
 .slide-btn {
     width: 70px;
     height: 70px;
-    position: absolute;
     font-size: 40px;
     font-weight: 500;
     color: var(--honeydew);
