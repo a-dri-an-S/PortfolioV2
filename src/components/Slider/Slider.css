@@ -51,7 +51,7 @@
 .dot {
     width: 15px;
     height: 15px;
-    margin: 5px;
+    margin: 0px 10px;
     border: none;
     border-radius: 50%;
     background-color: var(--honeydew);
@@ -63,4 +63,6 @@
 }
 .active {
     background-color: var(--prussian-blue);
+    width: 20px;
+    height: 20px;
 }
