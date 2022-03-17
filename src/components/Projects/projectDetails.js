@@ -1,34 +1,26 @@
-export const BeerStoreInfo = () => {
+export const BeerStoreDetails = () => {
     return (
         <div className="project-details">
-            <h4 className="project-tech-title"> TECH USED</h4>
-            <p className="project-tech">MERN Stack</p>
-            <p className="project-tech">Languages: HTML, CSS, JavaScript</p>
-            <p className="project-tech">Frameworks: Node.js, Next.js, Express.js</p>
-            <p className="project-tech">Libraries: React.js, Semantic UI, N-Progress</p>
-            <p className="project-tech">Database: MongoDBt</p>
-            <p className="project-tech">Auth: bcrypt, jsonwebtoken</p>
+            <p className="project-detail">Javascript, Next.js, Node.js, Express.js, MongoDB, Semantic-UI, N-Progress</p>
+            <p className="project-detail">Javascript, Next.js, Node.js, Express.js, MongoDB, Semantic-UI, N-Progress</p>
         </div>
     )
 }
 
-export const FingerDrumsInfo = () => {
+export const FingerDrumsDetails = () => {
     return (
         <div className="project-details">
-            <h4 className="project-tech-title"> TECH USED</h4>
-            <p className="project-tech">Languages: HTML, CSS, JavaScript</p>
-            <p className="project-tech">Libraries: React.js, Tone.js</p>
+            <p className="project-detail">Javascript, CSS, React.js, Tone.js</p>
+            <p className="project-detail">Javascript, CSS, React.js, Tone.js</p>
         </div>
     )
 }
 
-export const PokemonInfo = () => {
+export const PokemonDetails = () => {
     return (
         <div className="project-details">
-            <h4 className="project-tech-title"> TECH USED</h4>
-            <p className="project-tech">Languages: HTML, CSS, JavaScript</p>
-            <p className="project-tech">Libraries: React.js, react-confetti.js</p>
-            <p className="project-tech">API: PokeAPI</p>
+            <p className="project-detail">Javascript, React.js, PokeAPI</p>
+            <p className="project-detail">Javascript, React.js, PokeAPI</p>
         </div>
     )
 }

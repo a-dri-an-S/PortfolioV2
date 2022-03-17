@@ -1,27 +1,31 @@
-import Slide from '../Slider/Slides/Slide';
-import { BeerStoreInfo, FingerDrumsInfo, PokemonInfo } from './projectDetails';
+import Slide from '../Slider/Slide/Slide';
+import { BeerStoreTech, FingerDrumsTech, PokemonTech } from './ProjectTech';
+import { BeerStoreDetails, FingerDrumsDetails, PokemonDetails } from './ProjectDetails';
 
 import BeerStore from '../../assets/images/BeerStore.png'
 import FingerDrums from '../../assets/images/FingerDrums.png'
 import Pokemon from '../../assets/images/Pokemon.png'
 
-import './projects.css';
+import './Projects.css'
 
 export const projects = [
     <Slide 
         title="Beer Store" 
         img={BeerStore}
-        info={<BeerStoreInfo />}
+        tech={<BeerStoreTech />}
+        details={<BeerStoreDetails />}
     />,
     <Slide 
         title="Finger Drums" 
         img={FingerDrums}
-        info={<FingerDrumsInfo />}
+        tech={<FingerDrumsTech />}
+        details={<FingerDrumsDetails />}
     />,
     <Slide 
         title="Guess that Pokémon!" 
         img={Pokemon}
-        info={<PokemonInfo />}
+        tech={<PokemonTech />}
+        details={<PokemonDetails />}
     />,
 
 ];
