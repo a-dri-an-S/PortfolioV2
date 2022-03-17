@@ -49,6 +49,11 @@ const Form = () => {
         })
     }
 
+    const handleRemoveMessage = () => {
+        setSubmitError(false);
+        setSubmitSuccess(false);
+    }
+
     return (
         <form 
             className="form"
@@ -86,10 +91,10 @@ const Form = () => {
             />
             <div className="form-submit-message">
                 {
-                    submitSuccess && <SuccessMessage />
+                    submitSuccess && <SuccessMessage onClick={handleRemoveMessage}/>
                 }
                 {
-                    submitError && <ErrorMessage />
+                    submitError && <ErrorMessage onClick={handleRemoveMessage}/>
                 }
             </div>
             <div className="form-button">

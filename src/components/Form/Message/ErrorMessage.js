@@ -1,8 +1,11 @@
 import './Message.css';
 
-const ErrorMessage = () => {
+const ErrorMessage = ({ onClick }) => {
     return (
-        <div className="submit-message error">
+        <div 
+            className="submit-message error"
+            onClick={onClick}
+        >
             <p className="message-error">Error: Message not sent!</p>
         </div>
     );

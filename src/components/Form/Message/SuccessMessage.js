@@ -1,8 +1,11 @@
 import './Message.css';
 
-const SuccessMessage = () => {
+const SuccessMessage = ({ onClick }) => {
     return (
-        <div className="submit-message success">
+        <div 
+            className="submit-message success"
+            onClick={onClick}
+        >
             <p className="message-error">Message sent!</p>
         </div>
     );
