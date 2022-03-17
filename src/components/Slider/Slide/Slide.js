@@ -14,6 +14,7 @@ const Slide = ({ title, img, tech, details, repoUrl, liveUrl }) => {
                 </div>
                 <div className="slide-content-right">
                     <h3 className="slide-title">{title}</h3>
+                    <div className="slide-title-underline">.</div>
                     {details}
                 </div>
             </div>
