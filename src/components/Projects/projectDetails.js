@@ -1,8 +1,15 @@
 export const BeerStoreDetails = () => {
     return (
         <div className="project-details">
-            <p className="project-detail">Javascript, Next.js, Node.js, Express.js, MongoDB, Semantic-UI, N-Progress</p>
-            <p className="project-detail">Javascript, Next.js, Node.js, Express.js, MongoDB, Semantic-UI, N-Progress</p>
+            <p className="project-detail">
+                Fully functioning e-commerce website with User login and Order history
+            </p>
+            <p className="project-detail">
+                Stripe checkout in place for easy user checkout flow.
+            </p>
+            <p className="project-detail">
+                
+            </p>
         </div>
     )
 }

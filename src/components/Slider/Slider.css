@@ -46,7 +46,7 @@
 
 .dots-container {
     width: 200px;
-    height: 40px;
+    height: 50px;
 }
 .dot {
     width: 15px;
@@ -57,6 +57,9 @@
     background-color: var(--honeydew);
     box-shadow: 0px 0px 4px 1px var(--shadow-color);
 
+}
+.dot:hover {
+    cursor: pointer;
 }
 .active {
     background-color: var(--prussian-blue);

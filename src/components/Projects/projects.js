@@ -14,18 +14,24 @@ export const projects = [
         img={BeerStore}
         tech={<BeerStoreTech />}
         details={<BeerStoreDetails />}
+        repoUrl="https://github.com/a-dri-an-S/MERN-stack"
+        liveUrl="https://fake-beerstore.vercel.app/"
     />,
     <Slide 
         title="Finger Drums" 
         img={FingerDrums}
         tech={<FingerDrumsTech />}
         details={<FingerDrumsDetails />}
+        repoUrl="https://github.com/a-dri-an-S/finger-beats"
+        liveUrl="https://finger-drums.netlify.app/"
     />,
     <Slide 
         title="Guess that Pokémon!" 
         img={Pokemon}
         tech={<PokemonTech />}
         details={<PokemonDetails />}
+        repoUrl="https://github.com/a-dri-an-S/Guess-That-Pokemon-"
+        liveUrl="https://guessthepokemon.netlify.app/"
     />,
 
 ];

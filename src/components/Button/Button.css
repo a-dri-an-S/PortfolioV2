@@ -30,6 +30,7 @@
 
 .docs-btn:hover, .submit-btn:hover {
     background-color: var(--blue-yonder);
+    cursor: pointer;
 }
 
 .docs-btn:active, .submit-btn:active {
