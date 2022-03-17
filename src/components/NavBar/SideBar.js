@@ -1,4 +1,4 @@
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route, Link, NavLink } from "react-router-dom";
 import Main from '../../Pages/Main/Main';
 import AboutMe from '../../Pages/AboutMe/AboutMe';
 import Projects from '../../Pages/Projects/Projects';
@@ -18,16 +18,36 @@ const SideBar = () => {
                     <nav className="side-bar-links fade-in">
                         <ul className="side-bar-link-list">
                             <li className="side-bar-link">
-                                <Link className="side-bar-link link" to="/">Home</Link>
+                                <NavLink 
+                                    className={({ isActive }) => isActive ? 'link active-link' : 'link'} 
+                                    to="/"
+                                >
+                                    Home
+                                </NavLink>
                             </li>
                             <li className="side-bar-link">
-                                <Link className="side-bar-link link" to="/about-me">About Me</Link>
+                                <NavLink 
+                                    className={({ isActive }) => isActive ? 'link active-link' : 'link'} 
+                                    to="/about-me"
+                                >
+                                    About Me
+                                </NavLink>
                             </li>
                             <li className="side-bar-link">
-                                <Link className="side-bar-link link" to="/portfolio">Projects</Link>
+                                <NavLink 
+                                    className={({ isActive }) => isActive ? 'link active-link' : 'link'}  
+                                    to="/portfolio"
+                                >
+                                    Projects
+                                </NavLink>
                             </li>
                             <li className="side-bar-link">
-                                <Link className="side-bar-link link" to="/contact">Contact</Link>
+                                <NavLink 
+                                    className={({ isActive }) => isActive ? 'link active-link' : 'link'} 
+                                    to="/contact"
+                                >
+                                    Contact
+                                </NavLink>
                             </li>
                         </ul>
                     </nav>

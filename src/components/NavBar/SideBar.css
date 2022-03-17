@@ -84,6 +84,11 @@
     color: var(--orange-red);
 }
 
+.active-link {
+    background: none;
+    color: var(--orange-red);
+}
+
 @keyframes widenOnPageLoad {
     0% {
         width: 0%;
