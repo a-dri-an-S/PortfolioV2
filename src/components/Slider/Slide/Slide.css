@@ -34,8 +34,8 @@
     height: auto;
     margin-right: 45px;
     border-radius: 16px;
+    filter: grayscale(30%);
     box-shadow: 0px 0px 6px 2px var(--shadow-color);
-    z-index: 1;
 }
 
 .slide-content-right {
