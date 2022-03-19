@@ -8,7 +8,7 @@
     color: var(--honey-dew);
     border: none;
     border-radius: 14px;
-    margin: 20px 0px;
+    margin: 0px 20px;
 }
 
 .submit-btn {
@@ -35,4 +35,15 @@
 
 .docs-btn:active, .submit-btn:active {
     background-color: var(--orange-red);
+}
+
+@media only screen and (min-width: 768px) {
+    .docs-btn {
+        margin: 10px 0px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .docs-btn {
+        margin: 0px 20px;
+    }
 }

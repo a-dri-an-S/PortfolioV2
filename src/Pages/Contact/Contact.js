@@ -9,7 +9,7 @@ const AboutMe = () => {
     return (
         <section className="contact">
             <div className="contact-container">
-                <h2 className="contact-title">Contact</h2>
+                <h1 className="contact-title">Contact</h1>
                 <div className="contact-form">
                     <Form />
                 </div>

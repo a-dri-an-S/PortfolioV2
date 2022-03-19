@@ -8,29 +8,36 @@ const AboutMe = () => {
     return (
         <section className="about-me">
             <div className="about-me-container">
+                <h1 className="about-me-title">
+                    About Me
+                </h1>
                 <div className="about-me-cards">
-                    <div className="about-me-card-container">
-                        <h2 className="about-me-card-title">
-                            Background
-                        </h2>
-                        <div className="about-me-card">
-                            <BGCard />
+                    <div className="about-me-cards-container top-container">
+                        <div className="about-me-card-container top">
+                            <h2 className="about-me-card-title">
+                                Background
+                            </h2>
+                            <div className="about-me-card card-tall">
+                                <BGCard />
+                            </div>
+                        </div>
+                        <div className="about-me-card-container top">
+                            <h2 className="about-me-card-title">
+                                Skills
+                            </h2>
+                            <div className="about-me-card card-tall">
+                                <SkillsCard />
+                            </div>
                         </div>
                     </div>
-                    <div className="about-me-card-container">
-                        <h2 className="about-me-card-title">
-                            Skills
-                        </h2>
-                        <div className="about-me-card">   
-                            <SkillsCard />
-                        </div>
-                    </div>
-                    <div className="about-me-card-container">
-                        <h2 className="about-me-card-title">
-                            Documents
-                        </h2>
-                        <div className="about-me-card">
-                            <DocsCard />
+                    <div className="about-me-cards-container bottom-container">
+                        <div className="about-me-card-container bottom">
+                            <h2 className="about-me-card-title">
+                                Documents
+                            </h2>
+                            <div className="about-me-card card-wide">
+                                <DocsCard />
+                            </div>
                         </div>
                     </div>
                 </div>
