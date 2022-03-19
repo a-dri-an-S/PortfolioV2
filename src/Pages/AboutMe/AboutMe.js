@@ -32,9 +32,6 @@ const AboutMe = () => {
                     </div>
                     <div className="about-me-cards-container bottom-container">
                         <div className="about-me-card-container bottom">
-                            <h2 className="about-me-card-title">
-                                Documents
-                            </h2>
                             <div className="about-me-card card-wide">
                                 <DocsCard />
                             </div>
