@@ -1,21 +1,17 @@
 .router {
     display: flex;
+    flex-direction: row;
 }
-
 .side-bar {
-    width: 10%;
     height: 100vh;
     position: fixed;
     background-color: var(--blue-yonder);
     animation: widenOnPageLoad 1s ease-in 0s 1 forwards;
 }
-
 .fade-in {
     animation: fadeInOnPageLoad 1.25s ease 0s 1 forwards;
 }
-
 .side-bar-hover {
-    width: 10%;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -27,11 +23,6 @@
     animation: hideOnPageLoad 1.25s linear 0s 1 forwards;
     transition: width .5s;
 }
-
-.side-bar-hover:hover {
-    width: 15%;
-}
-
 .side-bar-logo {
     width: auto;
     height: 100vh;
@@ -42,12 +33,9 @@
     position: fixed;
     padding-top: 60px;
 }
-
 .side-bar-logo-img {
-    width: 120px;
     height: auto
 }
-
 .side-bar-links {
     width: auto;
     height: auto;
@@ -56,34 +44,27 @@
     justify-content: center;
     align-self: center;
 }
-
 .side-bar-link-list {
     position: relative;
     margin: 0;
     padding: 0;
 }
-
 .side-bar-link {
     list-style-type: none;
     padding: 20px;
 }
-
 .link {
     color: var(--honeydew);
     text-decoration: none;
-    font-size: 19px;
     font-weight: 500;
 }
-
 .link:hover {
     color: var(--honeydew-opaque);
     font-weight: 600;
 }
-
 .link:active {
     color: var(--orange-red);
 }
-
 .active-link {
     background: none;
     color: var(--orange-red);
@@ -119,5 +100,41 @@
     }
     100% {
         opacity: 100%
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .side-bar {
+        width: 180px;
+    }
+    .side-bar-hover {
+        width: 180px;
+    }
+    .side-bar-hover:hover {
+        width: 230px;
+    }
+    .side-bar-logo-img {
+        width: 110px;
+    }
+    .link {
+        font-size: 17px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .side-bar {
+        width: 200px;
+    }
+    .side-bar-hover {
+        width: 200px;
+    }
+    .side-bar-hover:hover {
+        width: 260px;
+    }
+    .side-bar-logo-img {
+        width: 120px;
+    }
+    .link {
+        font-size: 19px;
     }
 }

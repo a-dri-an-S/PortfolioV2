@@ -25,7 +25,8 @@
 	margin-top: 10px;
 	text-align: left;
 	font-size: 17px;
-	font-weight: 400;
+	font-weight: 500;
+	color: var(--black-coral)
 }
 
 .project-details {
