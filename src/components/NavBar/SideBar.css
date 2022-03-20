@@ -6,7 +6,6 @@
     height: 100vh;
     position: fixed;
     background-color: var(--blue-yonder);
-    animation: widenOnPageLoad 1s ease-in 0s 1 forwards;
     z-index: 1;
 }
 .fade-in {
@@ -71,13 +70,23 @@
     color: var(--orange-red);
 }
 
-@keyframes widenOnPageLoad {
+@keyframes widenOnPageLoadDesktop {
     0% {
-        width: 0%;
+        width: 0px;
         box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
     }
     100% {
-        width: 10%;
+        width: 200px;
+        box-shadow: none;
+    }
+}
+@keyframes widenOnPageLoadTablet {
+    0% {
+        width: 0px;
+        box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
+    }
+    100% {
+        width: 180px;
         box-shadow: none;
     }
 }
@@ -107,6 +116,7 @@
 @media only screen and (min-width: 768px) {
     .side-bar {
         width: 180px;
+        animation: widenOnPageLoadTablet 1s ease-in 0s 1 forwards;
     }
     .side-bar-hover {
         width: 180px;
@@ -125,6 +135,7 @@
 @media only screen and (min-width: 992px) {
     .side-bar {
         width: 200px;
+        animation: widenOnPageLoadDesktop 1s ease-in 0s 1 forwards;
     }
     .side-bar-hover {
         width: 200px;

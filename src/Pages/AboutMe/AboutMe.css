@@ -84,7 +84,7 @@
     }
     .bottom {
         width: 100%;
-        margin-top: 40px;
+        margin-top: 30px;
     }
     .about-me-card-title {
         font-size: 30px;
@@ -119,7 +119,7 @@
     }
     .card-wide {
         width: 375px;
-        height: 50px;
+        height: 30px;
     }
 }
 @media only screen and (min-width: 1200px) {
@@ -131,7 +131,7 @@
         flex-direction: row;
     }
     .bottom {
-        margin-top: 40px;
+        margin-top: 20px;
         width: 50%;
     }
     .card-tall {
@@ -141,6 +141,6 @@
     }
     .card-wide {
         width: 375px;
-        height: 50px;
+        height: 30px;
     }
 }
