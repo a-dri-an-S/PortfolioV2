@@ -10,18 +10,13 @@
     border-radius: 14px;
     margin: 0px 20px;
 }
-
 .submit-btn {
-    width: 160px;
-    height: 60px;
     background-color: var(--prussian-blue);
     font-family: montserrat;
-    font-size: 16px;
     font-weight: 600;
     color: var(--honey-dew);
     border: none;
     border-radius: 14px;
-    margin: 20px 0px;
 }
 
 .docs-btn, .submit-btn {
@@ -41,9 +36,21 @@
     .docs-btn {
         margin: 10px 0px;
     }
+    .submit-btn {
+        width: 140px;
+        height: 55px;
+        font-size: 15px;
+        margin: 12px 0px;
+    }
 }
 @media only screen and (min-width: 992px) {
     .docs-btn {
         margin: 0px 20px;
+    }
+    .submit-btn {
+        width: 160px;
+        height: 60px;
+        font-size: 16px;
+        margin: 15px 0px;
     }
 }

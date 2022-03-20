@@ -1,25 +1,19 @@
 .contact-social {
     width: 100%;
-    height: 60px;
+    height: 100%;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-	padding-bottom: 10px;
 }
-
 .contact-social-link {
-	width: 70px;
-	height: 70px;
     display: flex;
     justify-content: center;
     align-items: center;
 }
-
 .contact-social-icon {
-	width: 50px;
+	width: 40px;
 	height: auto;
-	margin: 15px;
 	box-shadow: 0px 0px 10px 2px var(--shadow-color);
 }
 .round-icon {
@@ -28,9 +22,31 @@
 .square-icon {
 	border-radius: 8px;
 }
-.contact-social-icon:hover {
-	width: 55px;
-}
 .contact-social-icon:active {
 	filter: hue-rotate(200deg) grayscale(75%);
+}
+
+@media only screen and (min-width: 768px) {
+	.contact-social-link {
+		width: 45px;
+		height: 45px;
+	}
+	.contact-social-icon {
+		width: 35px;
+	}
+	.contact-social-icon:hover {
+		width: 40px;
+	}
+}
+@media only screen and (min-width: 992px) {
+	.contact-social-link {
+		width: 55px;
+		height: 55px;
+	}
+	.contact-social-icon {
+		width: 40px;
+	}
+	.contact-social-icon:hover {
+		width: 45px;
+	}
 }
