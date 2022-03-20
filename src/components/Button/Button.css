@@ -1,9 +1,6 @@
 .docs-btn {
-    width: 140px;
-    height: 50px;
     background-color: var(--prussian-blue);
     font-family: montserrat;
-    font-size: 16px;
     font-weight: 600;
     color: var(--honey-dew);
     border: none;
@@ -34,7 +31,10 @@
 
 @media only screen and (min-width: 768px) {
     .docs-btn {
-        margin: 10px 0px;
+        margin: 0px 15px;
+        width: 130px;
+        height: 45px;
+        font-size: 15px;
     }
     .submit-btn {
         width: 140px;
@@ -46,6 +46,9 @@
 @media only screen and (min-width: 992px) {
     .docs-btn {
         margin: 0px 20px;
+        width: 140px;
+        height: 50px;
+        font-size: 16px;
     }
     .submit-btn {
         width: 160px;
