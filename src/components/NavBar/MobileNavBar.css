@@ -1,6 +1,5 @@
 .mobile-nav {
     width: 100%;
-    height: 400px;
     position: fixed;
     display: flex;
     flex-direction: column;
@@ -9,28 +8,15 @@
 }
 .mobile-nav-bar {
     width: 100%;
-    height: 120px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     background-color: var(--blue-yonder);
     box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
-    animation: mobileLoadIn 1s ease-in 0s 1 forwards;
     z-index: 1;
 }
-.mobile-nav-logo {
-    margin-left: 70px;
-}
-.mobile-nav-logo-img {
-    width: 110px;
-}
-.mobile-nav-dropdown-btn {
-    margin-right: 80px;
-}
 .mobile-nav-btn-img {
-    width: 25px;
-    height: 25px;
     transition: filter 200ms;
 }
 .mobile-nav-btn-img:active {
@@ -38,16 +24,12 @@
 }
 .mobile-nav-dropdown {
     width: 100%;
-    height: 280px;
     background-color: var(--blue-yonder-opaque);
     box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
-    animation: dropDown .5s ease-in 0s 1 forwards;
 }
 .mobile-nav-close {
     width: 100%;
-    height: 0px;
     background-color: var(--blue-yonder-opaque);
-    animation: close .5s ease-in 0s 1 forwards;
 }
 .mobile-nav-links {
     width: 100%;
@@ -60,25 +42,27 @@
 .mobile-nav-link-list {
     width: 50%;
     height: 80%;
-    padding-right: 20px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-end;
+}
+.links-fade-in {
     animation: linksFadeIn .5s ease-in 0s 1 forwards;
+}
+.links-fade-out {
+    animation: linksFadeOut .5s ease-in 0s 1 forwards;
 }
 .mobile-nav-link {
     list-style-type: none;
-    padding: 20px;
 }
 .mobile-link {
     color: var(--honeydew);
     text-decoration: none;
-    font-size: 18px;
     font-weight: 500;
 }
 .mobile-link:hover {
-    color: var(--honeydew-opaque);
+    color: var(--prussian-blue);
     font-weight: 600;
 }
 .mobile-link:active {
@@ -86,11 +70,79 @@
 
 }
 .active-mobile-link {
-    background: none;
     color: var(--orange-red);
 }
 
-@keyframes mobileLoadIn {
+@media only screen and (max-width: 479px){
+    .mobile-nav-bar {
+        /* animation: mobileLoadInSmall 1s ease-in 0s 1 forwards; */
+    }
+    .mobile-nav-logo {
+        /* margin-left: 50px; */
+    }
+    .mobile-nav-logo-img {
+        /* width: 100px; */
+    }
+    .mobile-nav-dropdown-btn {
+        /* margin-right: 50px; */
+    }
+    .mobile-nav-btn-img {
+        /* width: 25px;
+        height: 25px; */
+    }
+    .mobile-nav-dropdown {
+        /* animation: dropDownSmall .5s ease-in 0s 1 forwards; */
+    }
+    .mobile-nav-close {
+        /* animation: closeSmall .5s ease-in 0s 1 forwards; */
+    }
+    .mobile-nav-link-list {
+        /* padding-right: 20px;
+        animation: linksFadeInSmall .5s ease-in 0s 1 forwards; */
+    }
+    .mobile-nav-link {
+        /* padding: 18px; */
+    }
+    .mobile-link {
+        /* font-size: 16px; */
+    }
+}
+
+@media only screen and (min-width: 480px){
+    .mobile-nav-bar {
+        animation: mobileLoadInSmall 1s ease-in 0s 1 forwards;
+    }
+    .mobile-nav-logo {
+        margin-left: 50px;
+    }
+    .mobile-nav-logo-img {
+        width: 100px;
+    }
+    .mobile-nav-dropdown-btn {
+        margin-right: 50px;
+    }
+    .mobile-nav-btn-img {
+        width: 25px;
+        height: 25px;
+    }
+    .mobile-nav-dropdown {
+        animation: dropDownSmall .5s ease-in 0s 1 forwards;
+    }
+    .mobile-nav-close {
+        animation: closeSmall .5s ease-in 0s 1 forwards;
+    }
+    .mobile-nav-link-list {
+        padding-right: 20px;
+    }
+    .mobile-nav-link {
+        padding: 18px;
+    }
+    .mobile-link {
+        font-size: 16px;
+    }
+}
+
+@keyframes mobileLoadInSmall {
     0% {
         height: 0px;
     }
@@ -98,23 +150,23 @@
         height: 120px;
     }
 }
-@keyframes dropDown {
+@keyframes dropDownSmall {
     0% {
         height: 0px;
     }
     100% {
-        height: 280px;
+        height: 240px;
     }
 }
-@keyframes close {
+@keyframes closeSmall {
     0% {
-        height: 280px;
+        height: 240px;
     }
     100% {
         height: 0px;
     }
 }
-@keyframes linksFadeIn {
+@keyframes linksFadeIn{
     0% {
         opacity: 0;
     }
@@ -123,5 +175,16 @@
     }
     100% {
         opacity: 1;
+    }
+}
+@keyframes linksFadeOut{
+    0% {
+        opacity: 1;
+    }
+    45% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 0;
     }
 }

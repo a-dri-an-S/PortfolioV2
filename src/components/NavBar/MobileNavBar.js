@@ -13,7 +13,7 @@ import './MobileNavBar.css';
 
 const HamburgerImg = () => {
     return (
-        <img 
+        <img
             className="mobile-nav-btn-img"
             src={Hamburger}
             alt="nav-menu"
@@ -56,13 +56,13 @@ const MobileNavBar = () => {
                 {menuClick ?
                     <div className="mobile-nav-dropdown">
                         <div className="mobile-nav-links">
-                            <ul className="mobile-nav-link-list">
+                            <ul className="mobile-nav-link-list links-fade-in">
                                 <li className="mobile-nav-link">
                                     <NavLink
                                         className={({ isActive }) => isActive ? "mobile-link active-mobile-link" : "mobile-link"}
                                         to="/"
                                     >
-                                        Home    
+                                        Home
                                     </NavLink>
                                 </li>
                                 <li className="mobile-nav-link">
@@ -70,7 +70,7 @@ const MobileNavBar = () => {
                                         className={({ isActive }) => isActive ? "mobile-link active-mobile-link" : "mobile-link"}
                                         to="/about-me"
                                     >
-                                        About Me    
+                                        About Me
                                     </NavLink>
                                 </li>
                                 <li className="mobile-nav-link">
@@ -78,7 +78,7 @@ const MobileNavBar = () => {
                                         className={({ isActive }) => isActive ? "mobile-link active-mobile-link" : "mobile-link"}
                                         to="/projects"
                                     >
-                                        Projects    
+                                        Projects
                                     </NavLink>
                                 </li>
                                 <li className="mobile-nav-link">
@@ -86,7 +86,7 @@ const MobileNavBar = () => {
                                         className={({ isActive }) => isActive ? "mobile-link active-mobile-link" : "mobile-link"}
                                         to="/contact"
                                     >
-                                        Contact    
+                                        Contact
                                     </NavLink>
                                 </li>
                             </ul>
@@ -94,7 +94,16 @@ const MobileNavBar = () => {
                     </div> :
                     onLoad ?
                         null :
-                        <div className="mobile-nav-close" />
+                        <div className="mobile-nav-close">
+                            <div className="mobile-nav-links">
+                                <ul className="mobile-nav-link-list links-fade-out">
+                                    <li className="mobile-nav-link mobile-link">Home</li>
+                                    <li className="mobile-nav-link mobile-link">About Me</li>
+                                    <li className="mobile-nav-link mobile-link">Projects</li>
+                                    <li className="mobile-nav-link mobile-link">Contact</li>
+                                </ul>
+                            </div>
+                        </div>
                 }
             </nav>
             {/* <Routes>
