@@ -106,12 +106,12 @@ const MobileNavBar = () => {
                         </div>
                 }
             </nav>
-            {/* <Routes>
+            <Routes>
                 <Route path="/" element={<Main />} />
-                <Route path="/about-me" element={<AboutMe />} />
+                {/* <Route path="/about-me" element={<AboutMe />} />
                 <Route path="/projects" element={<Projects />} />
-                <Route path="/contact" element={<Contact />} />
-            </Routes> */}
+                <Route path="/contact" element={<Contact />} /> */}
+            </Routes>
         </section>
     );
 }
