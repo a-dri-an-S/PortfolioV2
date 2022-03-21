@@ -1,18 +1,16 @@
-// import { useState } from 'react';
 import useScreenSize from './hooks/getScreenSize';
 
 import SideBar from './components/NavBar/SideBar';
+import MobileNavBar from './components/NavBar/MobileNavBar';
 import './App.css';
 
 const App = () => {
   const screenWidth = useScreenSize();
 
-  console.log(screenWidth);
-
   return (
     <div className="App">
-      {screenWidth < 768 ? 
-      <h1>hello</h1> : 
+      {(screenWidth < 768) ? 
+      <MobileNavBar /> : 
       <SideBar />
       } 
     </div>

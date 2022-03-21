@@ -4,10 +4,12 @@ html {
   --prussian-blue: rgb(29, 53, 87);
   --black-coral: rgb(73, 88, 103);
   --blue-yonder: rgb(87, 115, 153);
-  --honeydew-opaque: rgba(241, 250, 238, 0.5);
   --honeydew:rgb(241, 250, 238);
   --orange-red: rgb(254, 95, 85);
+  --honeydew-opaque: rgba(241, 250, 238, 0.5);
+  --blue-yonder-opaque: rgba(87, 115, 153, 0.5);
   --shadow-color: rgba(0,0,0,.25);
+
 }
 
 body {

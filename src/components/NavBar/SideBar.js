@@ -10,12 +10,16 @@ import Logo from '../../assets/images/AdrianLogo.png';
 const SideBar = () => {
     return (
         <aside className="router">
-            <div className="side-bar">
+            <nav className="side-bar">
                 <div className="side-bar-hover">
                     <div className="side-bar-logo fade-in">
-                        <img className="side-bar-logo-img" src={Logo} alt={`AdrianSalinas`} />
+                        <img 
+                            className="side-bar-logo-img" 
+                            src={Logo} 
+                            alt="Adrian Salinas" 
+                        />
                     </div>
-                    <nav className="side-bar-links fade-in">
+                    <div className="side-bar-links fade-in">
                         <ul className="side-bar-link-list">
                             <li className="side-bar-link">
                                 <NavLink 
@@ -50,9 +54,9 @@ const SideBar = () => {
                                 </NavLink>
                             </li>
                         </ul>
-                    </nav>
+                    </div>
                 </div>
-            </div>
+            </nav>
 
             <Routes>
                 <Route path="/" element={<Main />} />
