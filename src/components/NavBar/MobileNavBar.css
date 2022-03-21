@@ -15,29 +15,89 @@
     justify-content: space-between;
     align-items: center;
     background-color: var(--blue-yonder);
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
+    animation: mobileLoadIn 1s ease-in 0s 1 forwards;
+    z-index: 1;
 }
 .mobile-nav-logo {
-    margin-left: 80px;
+    margin-left: 70px;
 }
 .mobile-nav-logo-img {
-    width: 100px;
+    width: 110px;
 }
 .mobile-nav-dropdown-btn {
     margin-right: 80px;
 }
-.nav-dropdown {
+.mobile-nav-btn-img {
+    width: 25px;
+    height: 25px;
+    transition: filter 200ms;
+}
+.mobile-nav-btn-img:active {
+    filter: invert(100%) grayscale(100%);
+}
+.mobile-nav-dropdown {
     width: 100%;
     height: 280px;
     background-color: var(--blue-yonder-opaque);
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.25);
     animation: dropDown .5s ease-in 0s 1 forwards;
 }
-.nav-close {
+.mobile-nav-close {
     width: 100%;
     height: 0px;
     background-color: var(--blue-yonder-opaque);
     animation: close .5s ease-in 0s 1 forwards;
 }
+.mobile-nav-links {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    position: relative;
+}
+.mobile-nav-link-list {
+    width: 50%;
+    height: 80%;
+    padding-right: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    animation: linksFadeIn .5s ease-in 0s 1 forwards;
+}
+.mobile-nav-link {
+    list-style-type: none;
+    padding: 20px;
+}
+.mobile-link {
+    color: var(--honeydew);
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 500;
+}
+.mobile-link:hover {
+    color: var(--honeydew-opaque);
+    font-weight: 600;
+}
+.mobile-link:active {
+    color: var(--orange-red);
 
+}
+.active-mobile-link {
+    background: none;
+    color: var(--orange-red);
+}
+
+@keyframes mobileLoadIn {
+    0% {
+        height: 0px;
+    }
+    100% {
+        height: 120px;
+    }
+}
 @keyframes dropDown {
     0% {
         height: 0px;
@@ -52,5 +112,16 @@
     }
     100% {
         height: 0px;
+    }
+}
+@keyframes linksFadeIn {
+    0% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
     }
 }

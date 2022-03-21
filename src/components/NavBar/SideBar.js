@@ -40,7 +40,7 @@ const SideBar = () => {
                             <li className="side-bar-link">
                                 <NavLink 
                                     className={({ isActive }) => isActive ? 'link active-link' : 'link'}  
-                                    to="/portfolio"
+                                    to="/projects"
                                 >
                                     Projects
                                 </NavLink>
@@ -61,7 +61,7 @@ const SideBar = () => {
             <Routes>
                 <Route path="/" element={<Main />} />
                 <Route path="/about-me" element={<AboutMe />} />
-                <Route path="/portfolio" element={<Projects />} />
+                <Route path="/projects" element={<Projects />} />
                 <Route path="/contact" element={<Contact />} />
             </Routes>
         </aside>
