@@ -19,10 +19,9 @@ const HamburgerImg = () => {
             alt="nav-menu"
         />
     )
-}
+};
 
 const MobileNavBar = () => {
-
     const [menuClick, setMenuClick] = useState(false);
     const [onLoad, setOnLoad] = useState(true);
 
@@ -30,8 +29,6 @@ const MobileNavBar = () => {
         setMenuClick(!menuClick);
         setOnLoad(false);
     }
-
-
 
     return (
         <section className="router">
