@@ -46,10 +46,12 @@ const Slider = () => {
                         direction="next"
                     />
                 </div>
-                <SliderDots
-                    onClick={animateDots}
-                    slideIdx={slideIdx}
-                />
+                <div>
+                    <SliderDots
+                        onClick={animateDots}
+                        slideIdx={slideIdx}
+                    />
+                </div>
             </div>
 
         </section>

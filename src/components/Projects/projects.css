@@ -24,30 +24,30 @@
 }
 
 @media only screen and (max-width: 479px) {
-	/* .project-tech {
+	.project-tech {
 		width: 70%;
 		align-items: center;
 	}
 	.project-tech-title {
-		margin: 10px 0px 0px 0px;
-		font-size: 18px;
+		margin: 5px 0px 0px 0px;
+		font-size: 15px;
 	}
 	.tech-title-underline {
-		width: 40%;
+		width: 50%;
 	}
 	.project-tech-info {
 		text-align: center;
 		justify-content: center;
-		margin-top: 10px;
-		font-size: 16px;
+		margin-top: 6px;
+		font-size: 13px;
 	}
 	.project-details {
 		width: 70%;
 	}
 	.project-detail {
-		margin: 10px 0px;
-		font-size: 16px;
-	} */
+		margin: 7px 0px;
+		font-size: 13px;
+	}
 }
 @media only screen and (min-width: 480px) {
 	.project-tech {
@@ -72,7 +72,7 @@
 	}
 	.project-detail {
 		margin: 5px 0px;
-		font-size: 15px;
+		font-size: 14px;
 	}
 }
 @media only screen and (min-width: 768px) {

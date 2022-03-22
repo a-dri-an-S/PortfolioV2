@@ -20,14 +20,16 @@
 }
 
 @media only screen and (max-width: 479px) {
-    /* .projects {
-        margin-left: 180px;
+    .projects {
         height: 100%;
     }
+    .projects-container {
+        margin-top: 70px;
+    }
     .projects-title {
-        font-size: 42px;
+        font-size: 32px;
         margin: 30px 0px;
-    } */
+    }
 }
 @media only screen and (min-width: 480px) {
     .projects {
@@ -35,7 +37,6 @@
     }
     .projects-container {
         margin-top: 100px;
-
     }
     .projects-title {
         font-size: 38px;
