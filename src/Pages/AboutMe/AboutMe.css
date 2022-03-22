@@ -55,12 +55,50 @@
     box-shadow: 0px 0px 10px 2px var(--shadow-color);
 }
 
-@media only screen and (min-width: 480px) {
-    .about-me {
+@media only screen and (max-width: 479px) {
+    /* .about-me {
+        position: relative;
         padding: 40px 0px;
         margin-top: 120px;
         height: 100%;
-        z-index: -1;
+    }
+    .about-me-title {
+        font-size: 40px;
+    }
+    .about-me-cards-container {
+        flex-direction: column;
+    }
+    .top {
+        width: 450px;
+    }
+    .bottom {
+        width: 450px;
+        margin-top: 20px;
+        position: relative;
+        z-index: 100;
+    }
+    .about-me-card-title {
+        margin-top: 20px;
+        font-size: 26px;
+    }
+    .card-tall {
+        width: 400px;
+        height: 300px;
+        padding: 15px 20px;
+    }
+    .card-wide {
+        width: 260px;
+        height: 60px;
+        padding: 15px 20px;
+    } */
+}
+@media only screen and (min-width: 480px) {
+    .about-me {
+        height: 100%;
+    }
+    .about-me-container {
+        padding: 40px 0px;
+        margin-top: 120px;
     }
     .about-me-title {
         font-size: 40px;
@@ -91,10 +129,10 @@
     }
 }
 @media only screen and (min-width: 768px) {
-    .about-me {
-        padding: 30px 0px;
+    .about-me-container {
+        padding: 100px 0px;
         margin-left: 180px;
-        height: 100%;
+        margin-top: 0px;
     }
     .about-me-title {
         font-size: 42px;
@@ -127,7 +165,7 @@
     }
 }
 @media only screen and (min-width: 992px) {
-    .about-me {
+    .about-me-container {
         margin-left: 200px;
     }
     .about-me-title {

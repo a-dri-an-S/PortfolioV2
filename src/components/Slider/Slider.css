@@ -40,8 +40,8 @@
     background-color: var(--prussian-blue);
 }
 
-@media only screen and (min-width: 768px) {
-    .slider-container {
+@media only screen and (max-width: 479px) {
+    /* .slider-container {
         width: 550px;
         height: 950px;
         margin-bottom: 80px;
@@ -72,6 +72,69 @@
     .active {
         width: 15px;
         height: 15px;
+    } */
+}
+@media only screen and (min-width: 480px) {
+    .slider-container {
+        width: 450px;
+        height: 800px;
+        margin-bottom: 80px;
+    }
+    .slide-btns {
+        width: 450px;
+    }
+    .slide-btn {
+        width: 40px;
+        height: 40px;
+        font-size: 26px;
+    }
+    .slide-btn:hover {
+        font-size: 30px;
+    }
+    .dots-container {
+        width: 90px;
+        height: 40px;
+        border: 1px solid red;
+    }
+    .dot {
+        width: 11px;
+        height: 11px;
+        margin: 0px 7px;
+    }
+    .active {
+        width: 13px;
+        height: 13px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .slider-container {
+        width: 550px;
+        height: 950px;
+        margin-bottom: 80px;
+    }
+    .slide-btns {
+        width: 550px;
+    }
+    .slide-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 30px;
+    }
+    .slide-btn:hover {
+        font-size: 36px;
+    }
+    .dots-container {
+        width: 100px;
+        height: 50px;
+    }
+    .dot {
+        width: 12px;
+        height: 12px;
+        margin: 0px 8px;
+    }
+    .active {
+        width: 15px;
+        height: 15px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -82,7 +145,6 @@
     }
     .slide-btns {
         width: 780px;
-        height: 100px;
     }
     .slide-btn {
         width: 55px;
@@ -113,7 +175,6 @@
     }
     .slide-btns {
         width: 900px;
-        height: 100px;
     }
     .slide-btn {
         width: 70px;
