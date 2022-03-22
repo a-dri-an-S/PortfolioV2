@@ -19,7 +19,7 @@ const contactForm = {
 const Form = () => {
 
     const [form, setForm] = useState(contactForm);
-    const [submitSuccess, setSubmitSuccess] = useState(false);
+    const [submitSuccess, setSubmitSuccess] = useState(true);
     const [submitError, setSubmitError] = useState(false);
 
     const serviceId = process.env.REACT_APP_SERVICE_ID;

@@ -69,10 +69,10 @@
         font-size: 14px;
     }
     .submit-btn {
-        /* width: 140px;
-        height: 55px;
-        font-size: 15px;
-        margin: 12px 0px; */
+        margin: 10px 0px;
+        width: 110px;
+        height: 40px;
+        font-size: 14px;
     }
 }
 @media only screen and (min-width: 768px) {

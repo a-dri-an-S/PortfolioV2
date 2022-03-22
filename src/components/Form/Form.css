@@ -18,7 +18,6 @@
 }
 .form-label {
     font-weight: 500;
-    margin-bottom: 10px;
 }
 .form-input {
     padding: 2px 5px 2px 5px;
@@ -38,20 +37,17 @@
 }
 .form-textarea {
     padding: 2px 5px 2px 5px;
-    margin-bottom: 15px;
+    font-family: montserrat;
+    font-weight: 500;
+    color: var(--prussian-blue);
+    resize: none;
     border: none;
     border-radius: 10px;
     box-shadow: 0px 0px 5px 3px var(--shadow-color);
     background-color: var(--honeydew-opaque);
-    font-family: montserrat;
-    font-size: 16px;
-    font-weight: 500;
-    color: var(--prussian-blue);
-    resize: none;
 }
 .form-submit-message {
     width: 100%;
-    height: 60px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -62,8 +58,8 @@ input:focus, textarea:focus {
 
 }
 
-@media only screen and (min-width: 768px) {
-    .form-inputs {
+@media only screen and (max-width: 479px) {
+    /* .form-inputs {
         flex-direction: column;
     }
     .form-label {
@@ -80,6 +76,55 @@ input:focus, textarea:focus {
     .form-textarea {
         width: 480px;
         height: 160px;
+    } */
+}
+@media only screen and (min-width: 480px) {
+    .form-inputs {
+        flex-direction: column;
+    }
+    .form-label {
+        font-size: 15px;
+        margin-bottom: 6px;
+    }
+    .form-input {
+        height: 34px;
+        margin-bottom: 8px;
+        font-size: 14px;
+    }
+    .name-input, .email-input, .subject-input {
+        width: 410px;
+    }
+    .form-textarea {
+        width: 410px;
+        height: 120px;
+        font-size: 14px;
+        margin-bottom: 10px;
+    }
+    .form-submit-message {
+        height: 50px;
+    }
+}
+@media only screen and (min-width: 768px) {
+    .form-label {
+        font-size: 16px;
+        margin-bottom: 8px;
+    }
+    .form-input {
+        height: 38px;
+        margin-bottom: 12px;
+        font-size: 15px;
+    }
+    .name-input, .email-input, .subject-input {
+        width: 480px;
+    }
+    .form-textarea {
+        width: 480px;
+        height: 160px;
+        font-size: 15px;
+        margin-bottom: 12px;
+    }
+    .form-submit-message {
+        height: 55px;
     }
 }
 @media only screen and (min-width: 992px) {
@@ -88,6 +133,7 @@ input:focus, textarea:focus {
     }
     .form-label {
         font-size: 18px;
+        margin-bottom: 10px;
     }
     .form-input {
         height: 40px;
@@ -102,6 +148,11 @@ input:focus, textarea:focus {
     }
     .form-textarea {
         width: 690px;
+        font-size: 16px;
+        margin-bottom: 15px;
+    }
+    .form-submit-message {
+        height: 60px;
     }
 }
 @media only screen and (min-width: 1200px) {

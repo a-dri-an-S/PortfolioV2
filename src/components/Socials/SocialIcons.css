@@ -26,6 +26,31 @@
 	filter: hue-rotate(200deg) grayscale(75%);
 }
 
+@media only screen and (max-width: 479px) {
+	/* .contact-social-link {
+		width: 45px;
+		height: 45px;
+	}
+	.contact-social-icon {
+		width: 35px;
+	}
+	.contact-social-icon:hover {
+		width: 40px;
+	} */
+}
+@media only screen and (min-width: 480px) {
+	.contact-social-link {
+		width: 40px;
+		height: 40px;
+		padding: 10px 0px;
+	}
+	.contact-social-icon {
+		width: 30px;
+	}
+	.contact-social-icon:hover {
+		width: 35px;
+	}
+}
 @media only screen and (min-width: 768px) {
 	.contact-social-link {
 		width: 45px;
