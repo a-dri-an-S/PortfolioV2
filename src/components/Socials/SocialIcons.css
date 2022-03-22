@@ -27,16 +27,17 @@
 }
 
 @media only screen and (max-width: 479px) {
-	/* .contact-social-link {
-		width: 45px;
-		height: 45px;
+	.contact-social-link {
+		width: 35px;
+		height: 35px;
+		padding: 10px 5px;
 	}
 	.contact-social-icon {
-		width: 35px;
+		width: 30px;
 	}
 	.contact-social-icon:hover {
-		width: 40px;
-	} */
+		width: 35px;
+	}
 }
 @media only screen and (min-width: 480px) {
 	.contact-social-link {

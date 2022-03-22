@@ -51,10 +51,10 @@
         font-size: 12px;
     }
     .submit-btn {
-        /* width: 140px;
-        height: 55px;
-        font-size: 15px;
-        margin: 12px 0px; */
+        margin: 10px 0px;
+        width: 100px;
+        height: 35px;
+        font-size: 13px;
     }
 }
 @media only screen and (min-width: 480px) {
