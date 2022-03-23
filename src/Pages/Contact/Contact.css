@@ -24,6 +24,7 @@
         height: 100vh;
     }
     .contact-container {
+        padding: 20px 0px;
         margin-top: 70px;
     }
     .contact-title {
@@ -32,28 +33,30 @@
 }
 @media only screen and (min-width: 480px) {
     .contact {
-        height: 100vh;
-    }
-    .contact-container {
+        height: 100%;
         margin-top: 100px;
+        margin-bottom: 60px;
     }
     .contact-title {
         font-size: 38px;
     }
 }
 @media only screen and (min-width: 768px) {
-
-    .contact-container {
+    .contact {
+        height: 100vh;
         margin-left: 180px;
         margin-top: 0px;
-
+        margin-bottom: 0px;
+    }
+    .contact-container {
+        margin-bottom: 5vh;
     }
     .contact-title {
         font-size: 42px;
     }
 }
 @media only screen and (min-width: 992px) {
-    .contact-container {
+    .contact {
         margin-left: 200px;
     }
     .contact-title {

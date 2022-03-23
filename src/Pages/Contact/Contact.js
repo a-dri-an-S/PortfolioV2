@@ -15,7 +15,7 @@ const AboutMe = () => {
                 </div>
                 <Socials />
             </div>
-                <Footer />
+            <Footer />
         </section>
     );
 }

@@ -106,7 +106,7 @@
     .slider-container {
         width: 550px;
         height: 950px;
-        margin-bottom: 80px;
+        margin-bottom: 0px;
     }
     .slide-btns {
         width: 550px;
@@ -137,7 +137,6 @@
     .slider-container {
         width: 780px;
         height: 500px;
-        margin-bottom: 80px;
     }
     .slide-btns {
         width: 780px;
