@@ -2,18 +2,34 @@
   "short_name": "React App",
   "name": "Create React App Sample",
   "icons": [
+    
     {
-      "src": "favicon.ico",
-      "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "src": "logo-16.png",
+      "type": "image/png",
+      "sizes": "16x16"
     },
     {
-      "src": "logo192.png",
+      "src": "logo-32.png",
+      "type": "image/png",
+      "sizes": "32x32"
+    },
+    {
+      "src": "logo-48.png",
+      "type": "image/png",
+      "sizes": "48x48"
+    },
+    {
+      "src": "logo-64.png",
+      "type": "image/png",
+      "sizes": "64x64"
+    },
+    {
+      "src": "logo-192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "logo512.png",
+      "src": "logo-512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
