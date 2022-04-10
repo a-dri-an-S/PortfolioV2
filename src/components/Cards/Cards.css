@@ -15,6 +15,9 @@
 .skill-name{
     margin: 0;
 }
+.background-content {
+    font-weight: 500;
+}
 .documents-container {
     display: flex;
     justify-content: center;
