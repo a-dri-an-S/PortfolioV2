@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SliderButton from './SliderButton';
 import SliderDots from './SliderDots';
-import { projects } from '../Projects/Projects';
+import { projects } from '../ProjectsInfo/ProjectsInfo';
 
 
 import './Slider.css';
