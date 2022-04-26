@@ -59,15 +59,16 @@
     font-weight: 500;
 }
 .link:hover {
-    color: var(--honeydew-opaque);
+    color: var(--prussian-blue);
     font-weight: 600;
 }
 .link:active {
     color: var(--orange-red);
 }
 .active-link {
-    background: none;
     color: var(--orange-red);
+    font-weight: 600;
+
 }
 
 @keyframes widenOnPageLoadDesktop {
