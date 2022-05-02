@@ -6,6 +6,7 @@
     height: 100vh;
     position: fixed;
     background-color: var(--blue-yonder);
+    box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
     z-index: 1;
 }
 .fade-in {
@@ -71,10 +72,71 @@
 
 }
 
+@media only screen and (min-width: 768px) {
+    .side-bar {
+        width: 180px;
+        animation: widenOnPageLoadTablet 1s ease-in 0s 1 forwards;
+    }
+    .side-bar-hover {
+        width: 180px;
+    }
+    .side-bar-hover:hover {
+        width: 230px;
+    }
+    .side-bar-logo-img {
+        width: 110px;
+    }
+    .link {
+        font-size: 17px;
+    }
+}
+@media only screen and (min-width: 992px) {
+    .side-bar {
+        animation: widenOnPageLoadDesktop 1s ease-in 0s 1 forwards;
+    }
+    .side-bar-hover {
+        width: 200px;
+    }
+    .side-bar-hover:hover {
+        width: 260px;
+    }
+    .side-bar-logo-img {
+        width: 120px;
+    }
+    .link {
+        font-size: 19px;
+    }
+}
+@media only screen and (min-width: 1200px) {
+    .side-bar {
+        animation: widenOnPageLoadDesktopLarge 1s ease-in 0s 1 forwards;
+    }
+    .side-bar-hover {
+        width: 240px;
+    }
+    .side-bar-hover:hover {
+        width: 280px;
+    }
+    .side-bar-logo-img {
+        width: 140px;
+    }
+    .link {
+        font-size: 21px;
+    }
+}
+
+@keyframes widenOnPageLoadDesktopLarge {
+    0% {
+        width: 0px;
+    }
+    100% {
+        width: 240px;
+        box-shadow: none;
+    }
+}
 @keyframes widenOnPageLoadDesktop {
     0% {
         width: 0px;
-        box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
     }
     100% {
         width: 200px;
@@ -84,7 +146,6 @@
 @keyframes widenOnPageLoadTablet {
     0% {
         width: 0px;
-        box-shadow: 2px 0px 3px 1px rgba(0, 0, 0, 0.25);
     }
     100% {
         width: 180px;
@@ -111,42 +172,5 @@
     }
     100% {
         opacity: 100%
-    }
-}
-
-@media only screen and (min-width: 768px) {
-    .side-bar {
-        width: 180px;
-        animation: widenOnPageLoadTablet 1s ease-in 0s 1 forwards;
-    }
-    .side-bar-hover {
-        width: 180px;
-    }
-    .side-bar-hover:hover {
-        width: 230px;
-    }
-    .side-bar-logo-img {
-        width: 110px;
-    }
-    .link {
-        font-size: 17px;
-    }
-}
-@media only screen and (min-width: 992px) {
-    .side-bar {
-        width: 200px;
-        animation: widenOnPageLoadDesktop 1s ease-in 0s 1 forwards;
-    }
-    .side-bar-hover {
-        width: 200px;
-    }
-    .side-bar-hover:hover {
-        width: 260px;
-    }
-    .side-bar-logo-img {
-        width: 120px;
-    }
-    .link {
-        font-size: 19px;
     }
 }
