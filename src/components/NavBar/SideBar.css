@@ -71,7 +71,28 @@
     font-weight: 600;
 
 }
-
+@media only screen and (max-height: 479px) and (orientation: landscape){
+    .side-bar {
+        animation: widenOnPageLoadTablet 1s ease-in 0s 1 forwards;
+    }
+    .side-bar-logo-img {
+        display: none;
+    }
+}
+@media only screen and (min-height: 479px) and (orientation: portrait){
+    .side-bar {
+        animation: widenOnPageLoadTablet 1s ease-in 0s 1 forwards;
+    }
+    .side-bar-hover {
+        width: 180px;
+    }
+    .side-bar-hover:hover {
+        width: 230px;
+    }
+    .side-bar-logo-img {
+        width: 110px;
+    }
+}
 @media only screen and (min-width: 768px) and (orientation: landscape) {
     .side-bar {
         animation: widenOnPageLoadTablet 1s ease-in 0s 1 forwards;
@@ -89,14 +110,7 @@
         font-size: 17px;
     }
 }
-@media only screen and (max-height: 479px) and (orientation: landscape){
-    .side-bar {
-        animation: widenOnPageLoadTablet 1s ease-in 0s 1 forwards;
-    }
-    .side-bar-logo-img {
-        display: none;
-    }
-}
+
 @media only screen and (min-width: 992px) {
     .side-bar {
         animation: widenOnPageLoadDesktop 1s ease-in 0s 1 forwards;
