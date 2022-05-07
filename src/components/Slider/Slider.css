@@ -165,11 +165,11 @@
 }
 @media only screen and (min-width: 1200px) {
     .slider-container {
-        width: 900px;
-        height: 600px;
+        width: 850px;
+        height: 500px;
     }
     .slide-btns {
-        width: 900px;
+        width: 850px;
     }
     .slide-btn {
         width: 70px;
