@@ -4,10 +4,12 @@ const Slide = ({ title, img, tech, details, repoUrl, liveUrl }) => {
     return (
         <div className="slide">
             <div className="slide-content">
-            <div className="slide-content-left">
+                <div className="slide-content-left">
                     <h3 className="slide-title">{title}</h3>
                     <div className="slide-title-underline">.</div>
-                    {details}
+                    <div className="slide-details">
+                        {details}
+                    </div>
                 </div>
                 <div className="slide-content-right">
                     <div className="slide-img-container">

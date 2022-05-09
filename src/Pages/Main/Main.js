@@ -12,7 +12,7 @@ const Main = () => {
                             Welcome!<br></br>I'm <span className="main-intro-title-bold">Adrian Salinas</span>
                         </h1>
                         <p className="main-intro-tagline">
-                            I'm a full-stack web developer who love crafting websites. Let's build the web together!
+                            I'm a full-stack web developer who loves crafting websites. Let's build the web together!
                         </p>
                     </div>
                 </div>
